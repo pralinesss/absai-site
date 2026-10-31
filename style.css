@@ -1,0 +1,26 @@
+:root{--bg:#0B0C0D;--card:#141618;--line:#222528;--text:#F4F5F2;--muted:#A3A8A6;--accent:#C8FF3D}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-.02em}
+.mark{width:32px;height:32px;border-radius:9px;background:var(--card);border:1px solid var(--line);display:grid;grid-template-columns:repeat(2,8px);gap:3px;place-content:center}
+.mark i{display:block;width:8px;height:6px;border-radius:2px;background:var(--accent)}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:10px;font-size:15px}
+nav a:hover,nav a[aria-current=page]{color:var(--text);background:var(--card)}
+h1{font-size:34px;line-height:1.1;letter-spacing:-.03em;margin:36px 0 8px}
+h2{font-size:21px;letter-spacing:-.01em;margin:36px 0 8px}
+h3{font-size:17px;margin:24px 0 4px}
+.lead{color:var(--muted);font-size:18px;margin:0 0 8px}
+.meta{color:var(--muted);font-size:14px}
+ul{padding-left:22px}li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:24px}
+.grid a{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;color:var(--text);text-decoration:none}
+.grid a:hover{border-color:var(--accent)}
+.grid b{display:block;font-size:17px}.grid span{color:var(--muted);font-size:14px}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.card h3{margin-top:0}.card>:last-child{margin-bottom:0}
